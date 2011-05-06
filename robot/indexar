@@ -1,0 +1,6 @@
+#!/bin/sh
+clear
+echo BEgins `date` >> /var/log/robot.index.log
+/usr/bin/php /var/www/robot/indexarftp.php 2>&1 >> /var/log/robot.index.log
+/usr/bin/php /var/www/robot/estadisticas.php 2>&1 >> /var/log/robot.index.log
+echo END `date`  >> /var/log/robot.index.log

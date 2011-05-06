@@ -1,0 +1,4 @@
+#!/bin/sh
+clear
+/usr/bin/php ./indexarftp.php
+/usr/bin/php ./estadisticas.php
